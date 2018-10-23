@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Chewy|Source+Sans+Pro|Ubuntu|Ubuntu+Mono');
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ccc;
+  overflow-y: scroll;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+}
+h1 {
+  font-family: 'Chewy', cursive;
+  font-size: 48px;
+  text-align: center;
+  margin: 0;
+  background-color: #4B367C;
+  color: #fff;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  padding: 10px 0 0;
+  color: #4B367C;
+  margin: 0;
+}
+
+.wrapper {
+  text-align: left;
+  color: #929499;
+}
+.wrapper .active {
+  color: #fff;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  font-family: 'Ubuntu Mono', monospace;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.tabs .tab {
+  padding: 12px;
+  background-color: #4B367C;
+  cursor: pointer;
+}
+.tabs .tab:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.tabs .tab:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+a {
+  color: #4B367C;
+  padding: 15px 30px 5px 170px;
+  display: inline-block;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+li.offline {
+  color: #fc3636;
+}
+li.online {
+  color: #14b866;
+}
+
+.tab_content img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 100px;
+}
+.tab_item {
+  padding-left: 0;
+}
+li {
+  font-family: 'Ubuntu Mono', monospace;
+  list-style: none;
+  position: relative;
+  padding-left: 0;
+  height: 100px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+li span {
+  display: block;
+  padding: 0px 30px 10px 170px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+}
+.offline span {
+  padding-left: 170px;
+}
+/*Media Query*/
+@media (max-width: 421px) {
+  .container {
+    width: 320px;
+  }
+  h2 {
+    margin: 0;
+  }
+  .tab_content img {
+    width: 100px;
+  }
+  li {
+    height: 100px;
+  }
+  li span {
+    padding: 0px 30px 10px 125px;
+    font-size: 12px;
+  }
+  a {
+    font-size: 20px;
+    padding: 15px 30px 5px 150px;
+  }
+  .offline span {
+    padding-left: 150px;
+  }
+}
